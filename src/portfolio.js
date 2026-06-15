@@ -36,8 +36,8 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/younes-abourrig-08103a338/",
   gmail: "younesabourrig@gmail.com",
   gitlab: "https://gitlab.com/younesabourrig",
-  facebook: "",
-  instagram: "",
+  facebook: "https://web.facebook.com/youness.abourig?_rdc=1&_rdr#",
+  instagram: "https://www.instagram.com/younes1ya",
   Twitter: "https://x.com/AbourrigYounes",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
