@@ -19,13 +19,30 @@
   color: $subTitle;
 }
 
+.software-skill-icon {
+  filter: grayscale(1);
+  height: 48px;
+  opacity: 0.75;
+  transition: all 0.2s ease-in-out;
+  width: 48px;
+}
+
 .software-skill-inline > i:hover {
   color: $skillsColor;
 }
+
+.software-skill-inline > .software-skill-icon:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
 .software-skill-inline > p {
   color: $subTitle;
   font-size: 10px;
 }
 .software-skill-inline > i:hover ~ p {
+  color: $skillsColor;
+}
+.software-skill-inline > .software-skill-icon:hover ~ p {
   color: $skillsColor;
 }

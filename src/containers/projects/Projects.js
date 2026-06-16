@@ -1,74 +1,98 @@
-import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
+import React, {useContext} from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
-import {openSource, socialMediaLinks} from "../../portfolio";
+import {projectSection} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
-import Loading from "../../containers/loading/Loading";
+import {Fade} from "react-reveal";
 export default function Projects() {
-  const GithubRepoCard = lazy(() =>
-    import("../../components/githubRepoCard/GithubRepoCard")
-  );
-  const FailedLoading = () => null;
-  const renderLoader = () => <Loading />;
-  const [repo, setrepo] = useState([]);
-  // todo: remove useContex because is not supported
   const {isDark} = useContext(StyleContext);
 
-  useEffect(() => {
-    const getRepoData = () => {
-      fetch("/profile.json")
-        .then(result => {
-          if (result.ok) {
-            return result.json();
-          }
-          throw result;
-        })
-        .then(response => {
-          setrepoFunction(response.data.user.pinnedItems.edges);
-        })
-        .catch(function (error) {
-          console.error(
-            `${error} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
-          );
-          setrepoFunction("Error");
-        });
-    };
-    getRepoData();
-  }, []);
+  if (!projectSection.display) {
+    return null;
+  }
 
-  function setrepoFunction(array) {
-    setrepo(array);
-  }
-  if (
-    !(typeof repo === "string" || repo instanceof String) &&
-    openSource.display
-  ) {
-    return (
-      <Suspense fallback={renderLoader()}>
-        <div className="main" id="opensource">
-          <h1 className="project-title">Open Source Projects</h1>
-          <div className="repo-cards-div-main">
-            {repo.map((v, i) => {
-              if (!v) {
-                console.error(
-                  `Github Object for repository number : ${i} is undefined`
-                );
-              }
-              return (
-                <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
-              );
-            })}
-          </div>
-          <Button
-            text={"More Projects"}
-            className="project-button"
-            href={socialMediaLinks.github}
-            newTab={true}
-          />
+  return (
+    <Fade bottom duration={1000} distance="20px">
+      <div className="main" id="projects">
+        <div className="project-header">
+          <h1 className={isDark ? "dark-mode project-title" : "project-title"}>
+            {projectSection.title}
+          </h1>
+          <p
+            className={
+              isDark ? "dark-mode project-subtitle" : "subTitle project-subtitle"
+            }
+          >
+            {projectSection.subtitle}
+          </p>
         </div>
-      </Suspense>
-    );
-  } else {
-    return <FailedLoading />;
-  }
+        <div className="project-cards-div-main">
+          {projectSection.projects.map((project, i) => {
+            return (
+              <div
+                key={i}
+                className={isDark ? "dark-mode project-card" : "project-card"}
+              >
+                <div className="project-card-detail">
+                  <h3
+                    className={
+                      isDark
+                        ? "dark-mode project-card-title"
+                        : "project-card-title"
+                    }
+                  >
+                    {project.title}
+                  </h3>
+                  <p
+                    className={
+                      isDark
+                        ? "dark-mode project-card-description"
+                        : "project-card-description"
+                    }
+                  >
+                    {project.description}
+                  </p>
+                  {project.technologies && project.technologies.length > 0 && (
+                    <ul className="project-technologies">
+                      {project.technologies.map((technology, index) => {
+                        return (
+                          <li
+                            key={index}
+                            className="project-technology"
+                            title={technology.name}
+                          >
+                            {technology.imageSrc ? (
+                              <img
+                                className="project-technology-icon"
+                                src={technology.imageSrc}
+                                alt={technology.name}
+                              />
+                            ) : (
+                              <i
+                                className={technology.fontAwesomeClassname}
+                                aria-hidden="true"
+                              ></i>
+                            )}
+                            <span>{technology.name}</span>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
+                </div>
+                {project.sourceCodeLink && (
+                  <Button
+                    text={"Source Code"}
+                    className="project-card-button"
+                    href={project.sourceCodeLink}
+                    newTab={true}
+                  />
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </Fade>
+  );
 }
