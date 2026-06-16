@@ -79,11 +79,19 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "golang",
-      fontAwesomeClassname: "fa-brands fa-golang"
+      imageSrc: "https://cdn.simpleicons.org/go/6AD7E5"
     },
     {
       skillName: "laravel",
-      fontAwesomeClassname: "fa-brands fa-laravel"
+      fontAwesomeClassname: "fab fa-laravel"
+    },
+    {
+      skillName: "mongodb",
+      imageSrc: "https://cdn.simpleicons.org/mongodb/47A248"
+    },
+    {
+      skillName: "git",
+      fontAwesomeClassname: "fab fa-git-alt"
     },
     {
       skillName: "docker",
@@ -163,6 +171,83 @@ const openSource = {
   display: true // Set false to hide this section, defaults to true
 };
 
+// Projects Section
+
+const projectSection = {
+  title: "Projects",
+  subtitle: "SOME OF THE PROJECTS I HAVE BUILT AND SHARED",
+  projects: [
+    {
+      title: "StoreBuy ",
+      description: "Microservices E-commerce Platform.",
+      technologies: [
+        {
+          name: "react",
+          fontAwesomeClassname: "fab fa-react"
+        },
+        {
+          name: "expressJs",
+          fontAwesomeClassname: "fab fa-node"
+        },
+        {
+          name: "mongodb",
+          imageSrc: "https://cdn.simpleicons.org/mongodb/47A248"
+        },
+        {
+          name: "git",
+          fontAwesomeClassname: "fab fa-git-alt"
+        },
+        {
+          name: "docker",
+          fontAwesomeClassname: "fa-brands fa-docker"
+        },
+        {
+          name: "docker",
+          fontAwesomeClassname: "fa-brands fa-docker"
+        },
+        {
+          name: "Golang",
+          fontAwesomeClassname: "fa-brands fa-golang"
+        }
+      ],
+      sourceCodeLink: "https://github.com/younesabourrig01/StoreBuy"
+    },
+    {
+      title: "SmartShop ",
+      description:
+        " SmartShop is a full-stack e-commerce web application built with React (Frontend) and Laravel (Backend), with an additional Go microservice.",
+      technologies: [
+        {
+          name: "react",
+          fontAwesomeClassname: "fab fa-react"
+        },
+        {
+          name: "laravel",
+          fontAwesomeClassname: "fab fa-laravel"
+        },
+        {
+          name: "SQLite",
+          fontAwesomeClassname: "fa-solid fa-database"
+        },
+        {
+          name: "git",
+          fontAwesomeClassname: "fab fa-git-alt"
+        },
+        {
+          name: "Taillwind",
+          fontAwesomeClassname: "fa-brands fa-tailwind-css"
+        },
+        {
+          name: "Golang",
+          fontAwesomeClassname: "fa-brands fa-golang"
+        }
+      ],
+      sourceCodeLink: "https://github.com/younesabourrig01/SmartShop"
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
 // Some big projects you have worked on
 
 const bigProjects = {
@@ -170,7 +255,7 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/valablue.png"),
       projectName: "Saayahealth",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
@@ -182,7 +267,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      image: require("./assets/images/ofppt.png"),
       projectName: "Nextu",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
@@ -193,63 +278,39 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Achievements And Certifications"),
+  subtitle: "Certifications",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Cisco-Syber Security",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Learn bases of cybersecurity atacks types and how to protect my self from it.",
+      image: require("./assets/images/cisco.png"),
+      imageAlt: "cisco",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          url: "https://drive.google.com/file/d/1W4MLKluzjY-K5ZSfrO-9ljEAQiIqIroI/view?usp=drive_link"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "freecodecamp",
+      subtitle: "Resposive web designe.",
+      image: require("./assets/images/freecodecamp.png"),
+      imageAlt: "freecodecamp",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Certification",
+          url: "https://www.freecodecamp.org/certification/younesabourrig/responsive-web-design"
         }
       ]
     }
@@ -278,7 +339,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -297,7 +358,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -310,7 +371,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -326,8 +387,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+212 712074402",
+  email_address: "younesabourrig@gmail.com"
 };
 
 // Twitter Section
@@ -349,6 +410,7 @@ export {
   techStack,
   workExperiences,
   openSource,
+  projectSection,
   bigProjects,
   achievementSection,
   blogSection,
