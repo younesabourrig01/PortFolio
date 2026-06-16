@@ -20,9 +20,7 @@
 }
 
 .software-skill-icon {
-  filter: grayscale(1);
   height: 48px;
-  opacity: 0.75;
   transition: all 0.2s ease-in-out;
   width: 48px;
 }
@@ -32,8 +30,7 @@
 }
 
 .software-skill-inline > .software-skill-icon:hover {
-  filter: grayscale(0);
-  opacity: 1;
+  transform: scale(1.1);
 }
 
 .software-skill-inline > p {

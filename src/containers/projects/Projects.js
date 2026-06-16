@@ -70,6 +70,7 @@ export default function Projects() {
                             ) : (
                               <i
                                 className={technology.fontAwesomeClassname}
+                                style={technology.style}
                                 aria-hidden="true"
                               ></i>
                             )}

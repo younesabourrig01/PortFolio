@@ -21,7 +21,7 @@ export default function SoftwareSkill() {
                     alt={skills.skillName}
                   />
                 ) : (
-                  <i className={skills.fontAwesomeClassname}></i>
+                  <i className={skills.fontAwesomeClassname} style={skills.style}></i>
                 )}
                 <p>{skills.skillName}</p>
               </li>

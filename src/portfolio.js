@@ -63,27 +63,32 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      fontAwesomeClassname: "fab fa-css3-alt",
+      style: { color: "#1572B6" }
     },
     {
       skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      fontAwesomeClassname: "fab fa-react",
+      style: { color: "#61DAFB" }
     },
     {
       skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      fontAwesomeClassname: "fab fa-node",
+      style: { color: "#339933" }
     },
     {
       skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      fontAwesomeClassname: "fas fa-database",
+      style: { color: "#003B57" }
     },
     {
       skillName: "golang",
-      imageSrc: "https://cdn.simpleicons.org/go/6AD7E5"
+      imageSrc: "https://cdn.simpleicons.org/go/00ADD8"
     },
     {
       skillName: "laravel",
-      fontAwesomeClassname: "fab fa-laravel"
+      fontAwesomeClassname: "fab fa-laravel",
+      style: { color: "#FF2D20" }
     },
     {
       skillName: "mongodb",
@@ -91,11 +96,13 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "git",
-      fontAwesomeClassname: "fab fa-git-alt"
+      fontAwesomeClassname: "fab fa-git-alt",
+      style: { color: "#F05032" }
     },
     {
       skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      fontAwesomeClassname: "fab fa-docker",
+      style: { color: "#2496ED" }
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -183,11 +190,13 @@ const projectSection = {
       technologies: [
         {
           name: "react",
-          fontAwesomeClassname: "fab fa-react"
+          fontAwesomeClassname: "fab fa-react",
+          style: { color: "#61DAFB" }
         },
         {
           name: "expressJs",
-          fontAwesomeClassname: "fab fa-node"
+          fontAwesomeClassname: "fab fa-node",
+          style: { color: "#339933" }
         },
         {
           name: "mongodb",
@@ -195,19 +204,17 @@ const projectSection = {
         },
         {
           name: "git",
-          fontAwesomeClassname: "fab fa-git-alt"
+          fontAwesomeClassname: "fab fa-git-alt",
+          style: { color: "#F05032" }
         },
         {
           name: "docker",
-          fontAwesomeClassname: "fa-brands fa-docker"
-        },
-        {
-          name: "docker",
-          fontAwesomeClassname: "fa-brands fa-docker"
+          fontAwesomeClassname: "fab fa-docker",
+          style: { color: "#2496ED" }
         },
         {
           name: "Golang",
-          fontAwesomeClassname: "fa-brands fa-golang"
+          imageSrc: "https://cdn.simpleicons.org/go/00ADD8"
         }
       ],
       sourceCodeLink: "https://github.com/younesabourrig01/StoreBuy"
@@ -219,27 +226,31 @@ const projectSection = {
       technologies: [
         {
           name: "react",
-          fontAwesomeClassname: "fab fa-react"
+          fontAwesomeClassname: "fab fa-react",
+          style: { color: "#61DAFB" }
         },
         {
           name: "laravel",
-          fontAwesomeClassname: "fab fa-laravel"
+          fontAwesomeClassname: "fab fa-laravel",
+          style: { color: "#FF2D20" }
         },
         {
           name: "SQLite",
-          fontAwesomeClassname: "fa-solid fa-database"
+          fontAwesomeClassname: "fas fa-database",
+          style: { color: "#003B57" }
         },
         {
           name: "git",
-          fontAwesomeClassname: "fab fa-git-alt"
+          fontAwesomeClassname: "fab fa-git-alt",
+          style: { color: "#F05032" }
         },
         {
-          name: "Taillwind",
-          fontAwesomeClassname: "fa-brands fa-tailwind-css"
+          name: "Tailwind",
+          imageSrc: "https://cdn.simpleicons.org/tailwindcss/06B6D4"
         },
         {
           name: "Golang",
-          fontAwesomeClassname: "fa-brands fa-golang"
+          imageSrc: "https://cdn.simpleicons.org/go/00ADD8"
         }
       ],
       sourceCodeLink: "https://github.com/younesabourrig01/SmartShop"
@@ -395,7 +406,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
