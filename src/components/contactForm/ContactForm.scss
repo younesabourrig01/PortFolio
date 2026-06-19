@@ -1,0 +1,143 @@
+@import "../../_globalColor";
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 640px;
+  margin-top: 2.5rem;
+  padding: 26px;
+  border: 1px solid rgba(85, 25, 139, 0.12);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(85, 25, 139, 0.04), rgba(255, 255, 255, 0));
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+}
+
+.contact-form label span {
+  color: $subTitle;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(85, 25, 139, 0.18);
+  border-radius: 6px;
+  padding: 16px 18px;
+  color: $textColor;
+  background-color: $lightBackground2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: $buttonColor;
+  box-shadow: 0 0 0 3px rgba(85, 25, 139, 0.12);
+  transform: translateY(-1px);
+}
+
+.contact-form-dark {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+}
+
+.contact-form-dark input,
+.contact-form-dark textarea {
+  color: $textColorDark;
+  background-color: $darkBackground;
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.contact-form-dark input::placeholder,
+.contact-form-dark textarea::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.contact-form-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.contact-form-button {
+  width: max-content;
+  border: solid 1px $buttonColor;
+  border-radius: 6px;
+  padding: 15px 26px;
+  color: $textColorDark;
+  background-color: $buttonColor;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.contact-form-button:hover:not(:disabled) {
+  background-color: $darkBoxShadow2;
+  color: $buttonColor;
+  transform: translateY(-3px);
+}
+
+.contact-form-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.contact-form-result {
+  color: $subTitle;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .contact-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-actions {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-form-button {
+    width: 100%;
+    font-size: 0.938rem;
+  }
+}

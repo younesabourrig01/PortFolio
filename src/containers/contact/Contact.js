@@ -6,6 +6,7 @@ import {Fade} from "react-reveal";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import ContactForm from "../../components/contactForm/ContactForm";
 
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
@@ -50,6 +51,7 @@ export default function Contact() {
               <br />
               <br />
               <SocialMedia />
+              <ContactForm />
             </div>
           </div>
           <div className="contact-image-div">
