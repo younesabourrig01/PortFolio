@@ -3,8 +3,7 @@
 This is my personal portfolio website. I built it using an open-source project as a starting point, then customized it to show my work, skills, and information about me.
 
 ## Live Demo
-
----
+go -> https://portfolio-bice-omega-31.vercel.app/
 
 ## About
 
