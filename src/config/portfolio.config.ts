@@ -1,4 +1,5 @@
-import { Avatar_180, Avatar_250 } from "@assets/images";
+import Avatar from "@assets/images/avatar.png";
+import AboutAvatar from "@assets/images/me.png";
 
 // Importing SVGs as raw strings
 import GithubIconRaw from "@assets/SVGs/Github.svg?raw";
@@ -16,16 +17,15 @@ export const themeConfig = ThemeOptions.DEFAULT;
 
 // Site Configuration
 export const siteConfig = {
-  title: "Younes Abourrig | Fullstack Developer",
+  title: "Younes Abourrig | Full-Stack Developer",
   description:
-    "Chirag Chrg is a full stack software engineer building high-performance, interactive web applications, real-time systems, and scalable digital experiences.",
-  canonical: "https://chiragchrg.netlify.app/",
-  googleSiteVerification: "YRAUUyc8TP4QJ1s53KAdLxcON9xifQf33BnLeP-F_5Y",
+    "Younes Abourrig is a junior full-stack developer focused on building robust web applications with React, Laravel, databases, Docker, and Git.",
+  canonical: "",
+  googleSiteVerification: "",
   keywords:
-    "Chirag Chrg, ChiragChrg, Fullstack Software Engineer, Fullstack Web Developer, React Developer, Node.js Developer, TypeScript Developer, UI/UX Engineer, Frontend Developer, Backend Developer, JavaScript Developer, Portfolio, Vortexa, ARMS, ARMS 2.0, ARMS v3, Academic Resource Management System, xrecon, Oriv, Oriv.io, Epitome, Epitome 2k24, AIMIT, I create exciting stuff on the internet, Modern Web Apps, Scalable Web Applications",
-  avatar:
-    "https://raw.githubusercontent.com/ChiragChrg/ChiragChrg.github.io/main/Avatar.webp",
-  siteUrl: "https://chiragchrg.netlify.app/",
+    "Younes Abourrig, Full Stack Developer, Junior Full Stack Developer, React Developer, Laravel Developer, Express.js, MongoDB, SQL, Docker, GitHub, Web Developer Portfolio",
+  avatar: "",
+  siteUrl: "",
 };
 
 // Header Section
@@ -33,22 +33,22 @@ export const headerConfig = {
   logotext: "Portfolio.",
   actionButton: {
     text: "Resume",
-    url: "/Resume.pdf", // use full URL or Public Folder path
+    url: "/Resume.pdf",
   },
 };
 
 // Hero Section
 export const heroConfig = {
-  salutation: "Hi👋🏻 My name is",
+  salutation: "Hi, my name is",
   firstName: "Younes",
   lastName: "Abourrig",
-  position: "Fullstack Web Developper",
+  position: "Junior Full-Stack Developer",
   tagLine: {
-    prefixText: "I create",
-    highlightedText: "Exciting Stuff",
-    suffixText: "on the Internet.",
+    prefixText: "I build",
+    highlightedText: "Robust Web Apps",
+    suffixText: "with clean full-stack architecture.",
   },
-  avatar: Avatar_180,
+  avatar: Avatar,
   links: [
     {
       label: "GitHub",
@@ -80,50 +80,50 @@ export const heroConfig = {
 
 // About Section
 export const aboutConfig = {
-  aboutAvatar: Avatar_250,
+  aboutAvatar: AboutAvatar,
   description: [
-    "Hey there! 👋🏻 I'm Chirag. I build things on the internet — with a strong focus on performance, interactivity, and getting the details right.",
-    'I enjoy working on systems that aren’t static. Real-time updates, complex UIs, and applications with lots of moving parts. I naturally go deeper into problems — optimizing, refining, and chasing that "this feels right" moment.',
-    "I like pushing systems to their limits, understanding how they behave, and improving them to be faster, cleaner, and more reliable.",
-    "If you're building something interesting, challenging, or technically demanding… I’d love to be part of it 😄",
+    "I am a junior full-stack developer passionate about building reliable web applications with Laravel, React, and modern database-driven architectures.",
+    "My experience includes creating full-stack features, connecting frontend interfaces to backend APIs, working with SQL and NoSQL databases, and using tools like Docker and Git to keep development organized.",
+    "During my full-stack developer internship, I worked on a React and Laravel application, translated client needs into key features, and improved both performance and the overall user experience.",
+    "I am curious, autonomous, and comfortable learning new backend technologies while collaborating with teams to deliver practical, maintainable solutions.",
   ],
 };
 
 // Footer Section
 export const footerConfig = {
   logo: LogoIcon,
-  title: "ChiragChrg | Portfolio.",
+  title: "Younes Abourrig | Portfolio.",
   links: [
     {
       label: "GitHub",
-      url: "https://github.com/ChiragChrg",
+      url: "",
       icon: GithubIconRaw,
     },
     {
       label: "LinkedIn",
-      url: "https://www.linkedin.com/in/chiragchrg/",
+      url: "",
       icon: LinkedinIconRaw,
     },
     {
       label: "X",
-      url: "https://x.com/ChiragChrg",
+      url: "",
       icon: TwitterIconRaw,
     },
     {
       label: "Instagram",
-      url: "https://www.instagram.com/chiragchrg/",
+      url: "",
       icon: InstagramIconRaw,
     },
     {
       label: "Discord",
-      url: "https://discord.gg/WmVQjMryDz",
+      url: "",
       icon: DiscordIconRaw,
     },
     {
       label: "Google Search",
-      url: "https://www.google.com/search?q=ChiragChrg",
+      url: "",
       icon: GoogleIconRaw,
     },
   ],
-  copyrightText: `© Copyright 2023-${new Date().getFullYear()} ChiragChrg`,
+  copyrightText: `Copyright 2026-${new Date().getFullYear()} Younes Abourrig.`,
 };
