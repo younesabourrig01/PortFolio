@@ -6,8 +6,10 @@ import TsIcon from "./typescript.svg";
 import PythonIcon from "./python.svg";
 import CppIcon from "./cpp.svg";
 import JavaIcon from "./java.svg";
+import GoIcon from "./go.svg";
 import CSharpIcon from "./csharp.svg";
 import PhpIcon from "./php.svg";
+import LaravelIcon from "./laravel.svg";
 import RIcon from "./r.svg";
 
 // Frontend & UI Libraries
@@ -86,8 +88,10 @@ export default {
     PythonIcon,
     CppIcon,
     JavaIcon,
+    GoIcon,
     CSharpIcon,
     PhpIcon,
+    LaravelIcon,
     RIcon,
 
     // Frontend & UI Libraries

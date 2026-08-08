@@ -9,7 +9,6 @@ import InstagramIconRaw from "@assets/SVGs/Instagram.svg?raw";
 import GoogleIconRaw from "@assets/SVGs/Google.svg?raw";
 import DiscordIconRaw from "@assets/SVGs/Discord.svg?raw";
 
-import { LogoIcon } from "@/assets/SVGs";
 import { ThemeOptions } from "../../scripts/generateThemes";
 
 // Theme Configuration
@@ -24,8 +23,8 @@ export const siteConfig = {
   googleSiteVerification: "",
   keywords:
     "Younes Abourrig, Full Stack Developer, Junior Full Stack Developer, React Developer, Laravel Developer, Express.js, MongoDB, SQL, Docker, GitHub, Web Developer Portfolio",
-  avatar: "",
-  siteUrl: "",
+  avatar: "/favicon.png",
+  siteUrl: "https://younesabourrig.dev/",
 };
 
 // Header Section
@@ -91,8 +90,11 @@ export const aboutConfig = {
 
 // Footer Section
 export const footerConfig = {
-  logo: LogoIcon,
   title: "Younes Abourrig | Portfolio.",
+  credit: {
+    text: "Created by ChiragChrg and updated by YA.",
+    url: "https://github.com/ChiragChrg",
+  },
   links: [
     {
       label: "GitHub",
@@ -125,5 +127,5 @@ export const footerConfig = {
       icon: GoogleIconRaw,
     },
   ],
-  copyrightText: `Copyright 2026-${new Date().getFullYear()} Younes Abourrig.`,
+  copyrightText: `Copyright 2026-${new Date().getFullYear()} ChiragChrg.`,
 };

@@ -2,11 +2,11 @@
   "name": "portfolio",
   "type": "module",
   "version": "1.0.0",
-  "homepage": "https://github.com/ChiragChrg/portfolio",
+  "homepage": "",
   "author": {
-    "name": "ChiragChrg",
-    "email": "chiruchirag2001@gmail.com",
-    "url": "https://chiragchrg.netlify.app/"
+    "name": "Younes Abourrig",
+    "email": "younesabourrig@gmail.com",
+    "url": ""
   },
   "scripts": {
     "dev": "bun run build:themes && astro dev --open --host",
@@ -23,7 +23,6 @@
   "dependencies": {
     "@astrojs/check": "0.9.9",
     "@astrojs/preact": "5.1.2",
-    "@emailjs/browser": "^4.4.1",
     "@studio-freight/lenis": "^1.0.42",
     "@tailwindcss/vite": "^4.2.4",
     "astro": "6.2.1",

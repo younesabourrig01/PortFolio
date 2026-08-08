@@ -92,7 +92,7 @@ export const PROJECTS_LIST: IProject[] = [
             TECH_STACK.Reactjs,
             TECH_STACK.Laravel,
             TECH_STACK.Python,
-            TECH_STACK.RESTAPI,
+            TECH_STACK.SQL,
         ],
         features: [
             {
@@ -160,7 +160,7 @@ export const PROJECTS_LIST: IProject[] = [
             TECH_STACK.Reactjs,
             TECH_STACK.Expressjs,
             TECH_STACK.MongoDB,
-            TECH_STACK.RESTAPI,
+            TECH_STACK.Go,
         ],
         features: [
             {

@@ -1,6 +1,4 @@
 ---
-import { Image } from "astro:assets";
-
 const currentYear = new Date().getFullYear();
 const { config } = Astro.props;
 ---
@@ -29,9 +27,20 @@ const { config } = Astro.props;
             fill="var(--footer)"></path>
     </svg>
 
-    <div class="w-full flex_center flex-col gap-2">
-        <Image src={config.logo} alt="LogoIcon" width={80} height={80} />
+    <div class="w-full flex_center flex-col gap-2 text-center">
         <span>{config.title}</span>
+        {
+            config.credit && (
+                <a
+                    href={config.credit.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    class="text-sm underline underline-offset-4"
+                >
+                    {config.credit.text}
+                </a>
+            )
+        }
     </div>
 
     <div class="grid grid-cols-3 lg:grid-cols-6 gap-x-20 gap-y-10 lg:gap-20">
@@ -54,5 +63,5 @@ const { config } = Astro.props;
         }
     </div>
 
-    <span>© Copyright 2023-{currentYear} ChiragChrg</span>
+    <span>{config.copyrightText || `Copyright ${currentYear} ChiragChrg.`}</span>
 </footer>
