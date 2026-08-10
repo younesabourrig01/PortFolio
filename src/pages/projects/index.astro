@@ -34,7 +34,7 @@ const { PROJECTS_LIST } = await ProjectInfo;
             )
         }
 
-        <div class="grid grid-cols-[repeat(auto-fill,minmax(500px,1fr))] gap-x-6 gap-y-3 mt-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-8">
             {
                 PROJECTS_LIST?.map((project) => {
                     if (project?.isHidden) return;

@@ -17,7 +17,10 @@ export default defineConfig({
     })
   ],
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
+    resolve: {
+      tsconfigPaths: false
+    }
   },
   build: {
     // Enable CSS code splitting
