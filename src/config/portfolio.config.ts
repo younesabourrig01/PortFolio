@@ -6,7 +6,7 @@ import GithubIconRaw from "@assets/SVGs/Github.svg?raw";
 import LinkedinIconRaw from "@assets/SVGs/Linkedin.svg?raw";
 import TwitterIconRaw from "@assets/SVGs/Twitter.svg?raw";
 import InstagramIconRaw from "@assets/SVGs/Instagram.svg?raw";
-import GoogleIconRaw from "@assets/SVGs/Google.svg?raw";
+
 import DiscordIconRaw from "@assets/SVGs/Discord.svg?raw";
 
 import { ThemeOptions } from "../../scripts/generateThemes";
@@ -29,7 +29,7 @@ export const siteConfig = {
 
 // Header Section
 export const headerConfig = {
-  logotext: "Portfolio.",
+  logotext: "YA.",
   actionButton: {
     text: "Resume",
     url: "/Resume.pdf",
@@ -69,11 +69,6 @@ export const heroConfig = {
       url: "",
       icon: InstagramIconRaw,
     },
-    {
-      label: "Google Search",
-      url: "",
-      icon: GoogleIconRaw,
-    },
   ],
 };
 
@@ -90,7 +85,7 @@ export const aboutConfig = {
 
 // Footer Section
 export const footerConfig = {
-  title: "Younes Abourrig | Portfolio.",
+  title: "Younes Abourrig | YA.",
   credit: {
     text: "Created by ChiragChrg and updated by YA.",
     url: "https://github.com/ChiragChrg",
@@ -120,11 +115,6 @@ export const footerConfig = {
       label: "Discord",
       url: "",
       icon: DiscordIconRaw,
-    },
-    {
-      label: "Google Search",
-      url: "",
-      icon: GoogleIconRaw,
     },
   ],
   copyrightText: `Copyright 2026-${new Date().getFullYear()} ChiragChrg.`,

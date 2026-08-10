@@ -31,7 +31,7 @@ const ContactForm = () => {
             setIsLoading(true);
 
             const formData = new FormData();
-            formData.append("access_key", "575e3bd3-3353-4ef0-b698-e90a605d9304");
+            formData.append("access_key", import.meta.env.PUBLIC_WEB3FORMS_KEY);
             formData.append("name", name);
             formData.append("email", email);
             formData.append("message", message);

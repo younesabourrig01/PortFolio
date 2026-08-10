@@ -27,6 +27,18 @@ export const WorkWithStack = [
         link: "https://expressjs.com/",
     },
     {
+        name: "Tailwind CSS",
+        description: "I use Tailwind CSS to build modern, responsive UIs with utility-first styling.",
+        icon: SKILLS.TailwindIcon,
+        link: "https://tailwindcss.com/",
+    },
+    {
+        name: "Redux",
+        description: "I use Redux to manage complex application state in a predictable way.",
+        icon: SKILLS.ReduxIcon,
+        link: "https://redux.js.org/",
+    },
+    {
         name: "Git",
         description: "I use Git to track changes and manage project history.",
         icon: SKILLS.GitIcon,
@@ -65,16 +77,22 @@ export const DatabaseStack = [
 
 export const LearningStack = [
     {
+        name: "TypeScript",
+        description: "I am deepening my TypeScript skills to write safer, more scalable code.",
+        icon: SKILLS.TsIcon,
+        link: "https://www.typescriptlang.org/",
+    },
+    {
+        name: "Redis",
+        description: "I am learning Redis for caching and fast in-memory data storage.",
+        icon: SKILLS.RedisIcon,
+        link: "https://redis.io/",
+    },
+    {
         name: "Python",
         description: "I have basic notions and want to learn more for backend and automation work.",
         icon: SKILLS.PythonIcon,
         link: "https://www.python.org/",
-    },
-    {
-        name: "Java",
-        description: "I have basic notions and want to strengthen my object-oriented programming skills.",
-        icon: SKILLS.JavaIcon,
-        link: "https://www.oracle.com/java/",
     },
     {
         name: "Go",
