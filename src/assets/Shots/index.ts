@@ -1,9 +1,12 @@
-// Screenshots have been removed.
-// Using project logos as placeholder images to prevent build crashes.
-import CookeezLogo from "@assets/Logos/CookeezLogo.svg";
-import NextmartLogo from "@assets/Logos/NextmartLogo.svg";
+import pulsetaskIcon from "./pulsetask-icon.svg";
+import sahaServeImg from "./sahaServe.png";
+import smartShopImg from "./smartShopLogo.png";
+import storBuyImg from "./storBuy.png";
 
 export default {
-    CookeezShots: CookeezLogo,
-    NextmartShots: NextmartLogo,
+    PulseTaskShots: pulsetaskIcon,
+    SahaServeShots: sahaServeImg,
+    SmartShopShots: smartShopImg,
+    StorBuyShots: storBuyImg,
 };
+

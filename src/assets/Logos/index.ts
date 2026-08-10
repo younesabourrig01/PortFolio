@@ -14,6 +14,11 @@ import XReconLogo from "./XReconLogo.svg"
 import YoatubeLogo from "./YoatubeLogo.svg"
 import VortexaLogo from "./VortexaLogo.svg"
 
+import PulseTaskLogo from "@assets/Shots/pulsetask-icon.svg"
+import SahaServeLogo from "@assets/Shots/sahaServe.png"
+import SmartShopLogo from "@assets/Shots/smartShopLogo.png"
+import StorBuyLogo from "@assets/Shots/storBuy.png"
+
 export default {
     NextmartLogo,
     ArmsLogo,
@@ -30,4 +35,9 @@ export default {
     XReconLogo,
     YoatubeLogo,
     VortexaLogo,
+    PulseTaskLogo,
+    SahaServeLogo,
+    SmartShopLogo,
+    StorBuyLogo,
 }
+
