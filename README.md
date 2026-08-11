@@ -1,7 +1,8 @@
 # Younes Abourrig | YA.
 
 Welcome to **my** personal portfolio website, a Full-Stack Developer specializing in building modern, scalable web applications.
-live on [younes's Portfolio](https://myportfolio-phi-seven-63.vercel.app/)
+---
+- live on [younes's Portfolio](https://myportfolio-phi-seven-63.vercel.app/)
 ---
 
 ## 📌 Acknowledgments & Credit
