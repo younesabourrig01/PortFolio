@@ -13,10 +13,3 @@ Welcome to **my** personal portfolio website, a Full-Stack Developer specializin
 
 Special thanks to ChiragChrg for the original design and structure!
 
----
-
-## Tech Stack & Features
-
-- **Framework**: Astro & React / Preact
-- **Styling**: Tailwind CSS & Modern Custom Animations
-- **Icons & Graphics**: Lucide Preact & Custom SVGs
