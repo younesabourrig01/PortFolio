@@ -12,13 +12,16 @@ type Props = {
 const { project, className }: Props = Astro.props;
 
 // PROJECT STATUS CHECK
-let PROJECT_STATUS: "LIVE" | "BUILDING" | "COMPLETED" | "DOWN";
+let PROJECT_STATUS: string;
 let statusClass = "statusBuilding";
 
-if (project.status === "development") {
+if (project.status === "working now") {
+    PROJECT_STATUS = "WORKING NOW";
+    statusClass = "statusBuilding";
+} else if (project.status === "development") {
     PROJECT_STATUS = "BUILDING";
     statusClass = "statusBuilding";
-} else if (project.liveUrl && project.liveUrl.trim() !== "") {
+} else if (project.showDemo && project.liveUrl && project.liveUrl.trim() !== "") {
     let isLive = false;
     try {
         const res = await fetch(project.liveUrl, {
@@ -126,7 +129,7 @@ const themeColor = project.theme || "#3b82f6";
                     )
                 }
                 {
-                    project.liveUrl && (
+                    project.showDemo && project.liveUrl && (
                         <a
                             href={project.liveUrl}
                             title={`${project.name} Preview`}

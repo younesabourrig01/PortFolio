@@ -54,7 +54,7 @@ const { config } = Astro.props;
                             aria-label={link.label}
                             target="_blank"
                             rel="noreferrer"
-                            class="w-[30px] h-[30px] flex items-center justify-center"
+                            class="w-9 h-9 flex items-center justify-center [&>svg]:w-full [&>svg]:h-full"
                         >
                             <Fragment set:html={link.icon} />
                         </a>

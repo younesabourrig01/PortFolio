@@ -4,12 +4,15 @@ import AboutAvatar from "@assets/images/me.png";
 // Importing SVGs as raw strings
 import GithubIconRaw from "@assets/SVGs/Github.svg?raw";
 import LinkedinIconRaw from "@assets/SVGs/Linkedin.svg?raw";
-import TwitterIconRaw from "@assets/SVGs/Twitter.svg?raw";
 import InstagramIconRaw from "@assets/SVGs/Instagram.svg?raw";
-
+import FacebookIconRaw from "@assets/SVGs/Facebook.svg?raw";
+import GmailIconRaw from "@assets/SVGs/Gmail.svg?raw";
 import DiscordIconRaw from "@assets/SVGs/Discord.svg?raw";
 
 import { ThemeOptions } from "../../scripts/generateThemes";
+
+const gmailComposeUrl =
+  "https://mail.google.com/mail/?view=cm&fs=1&to=younesabourrig@gmail.com";
 
 // Theme Configuration
 export const themeConfig = ThemeOptions.DEFAULT;
@@ -51,23 +54,28 @@ export const heroConfig = {
   links: [
     {
       label: "GitHub",
-      url: "",
+      url: "https://github.com/younesabourrig01",
       icon: GithubIconRaw,
     },
     {
       label: "LinkedIn",
-      url: "",
+      url: "https://www.linkedin.com/in/younes-abourrig-08103a338/",
       icon: LinkedinIconRaw,
     },
     {
-      label: "X",
-      url: "",
-      icon: TwitterIconRaw,
+      label: "Instagram",
+      url: "https://www.instagram.com/younes1ya",
+      icon: InstagramIconRaw,
     },
     {
-      label: "Instagram",
-      url: "",
-      icon: InstagramIconRaw,
+      label: "Facebook",
+      url: "https://web.facebook.com/youness.abourig",
+      icon: FacebookIconRaw,
+    },
+    {
+      label: "Mail",
+      url: gmailComposeUrl,
+      icon: GmailIconRaw,
     },
   ],
 };
@@ -93,27 +101,32 @@ export const footerConfig = {
   links: [
     {
       label: "GitHub",
-      url: "",
+      url: "https://github.com/younesabourrig01",
       icon: GithubIconRaw,
     },
     {
       label: "LinkedIn",
-      url: "",
+      url: "https://www.linkedin.com/in/younes-abourrig-08103a338/",
       icon: LinkedinIconRaw,
     },
     {
-      label: "X",
-      url: "",
-      icon: TwitterIconRaw,
-    },
-    {
       label: "Instagram",
-      url: "",
+      url: "https://www.instagram.com/younes1ya",
       icon: InstagramIconRaw,
     },
     {
+      label: "Facebook",
+      url: "https://web.facebook.com/youness.abourig",
+      icon: FacebookIconRaw,
+    },
+    {
+      label: "Mail",
+      url: gmailComposeUrl,
+      icon: GmailIconRaw,
+    },
+    {
       label: "Discord",
-      url: "",
+      url: "https://discord.com",
       icon: DiscordIconRaw,
     },
   ],

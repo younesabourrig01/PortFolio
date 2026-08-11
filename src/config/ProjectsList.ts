@@ -5,6 +5,7 @@ import { buildTechStack } from "@/utils/commonUtils";
 
 export interface IProject {
     isHidden: boolean;
+    showDemo?: boolean;
 
     name: string;
     shortDescription: string;
@@ -15,7 +16,7 @@ export interface IProject {
     deviceMockupImage: ImageMetadata;
 
     theme: string;
-    status: "completed" | "development";
+    status: "completed" | "development" | "working now";
 
     liveUrl: string;
     sourceUrl: string;
@@ -77,6 +78,7 @@ const COMMON_FEATURES = {
 export const PROJECTS_LIST: IProject[] = [
     {
         isHidden: false,
+        showDemo: false,
         name: "PulseTask",
         shortDescription: "DevOps tool created to control multiple servers, manage hosted applications, and execute SSH commands.",
         description:
@@ -85,9 +87,9 @@ export const PROJECTS_LIST: IProject[] = [
         previewImage: SCREENSHOTS.PulseTaskShots,
         deviceMockupImage: SCREENSHOTS.PulseTaskShots,
         theme: "#2563eb",
-        status: "completed",
+        status: "working now",
         liveUrl: "",
-        sourceUrl: "",
+        sourceUrl: "https://github.com/younesabourrig01/PulseTask",
         technologies: [
             TECH_STACK.Laravel,
             TECH_STACK.Reactjs,
@@ -117,6 +119,7 @@ export const PROJECTS_LIST: IProject[] = [
     },
     {
         isHidden: false,
+        showDemo: false,
         name: "SahaServe",
         shortDescription: "All-in-one restaurant management platform with AI review analysis and smart ordering assistant.",
         description:
@@ -127,7 +130,7 @@ export const PROJECTS_LIST: IProject[] = [
         theme: "#f97316",
         status: "completed",
         liveUrl: "",
-        sourceUrl: "",
+        sourceUrl: "https://github.com/younesabourrig01/SahaServe",
         technologies: [
             TECH_STACK.Laravel,
             TECH_STACK.Reactjs,
@@ -161,6 +164,7 @@ export const PROJECTS_LIST: IProject[] = [
     },
     {
         isHidden: false,
+        showDemo: false,
         name: "SmartShop",
         shortDescription: "E-commerce store built with a hybrid architecture combining Laravel, Go microservices, and React.",
         description:
@@ -171,7 +175,7 @@ export const PROJECTS_LIST: IProject[] = [
         theme: "#8b5cf6",
         status: "completed",
         liveUrl: "",
-        sourceUrl: "",
+        sourceUrl: "https://github.com/younesabourrig01/SmartShop",
         technologies: [
             TECH_STACK.Reactjs,
             TECH_STACK.TypeScript,
@@ -203,6 +207,7 @@ export const PROJECTS_LIST: IProject[] = [
     },
     {
         isHidden: false,
+        showDemo: false,
         name: "StorBuy",
         shortDescription: "Full microservices e-commerce platform built with Express.js, Go, Docker, React, and MongoDB.",
         description:
@@ -213,7 +218,7 @@ export const PROJECTS_LIST: IProject[] = [
         theme: "#10b981",
         status: "completed",
         liveUrl: "",
-        sourceUrl: "",
+        sourceUrl: "https://github.com/younesabourrig01/StoreBuy",
         technologies: [
             TECH_STACK.Reactjs,
             TECH_STACK.Expressjs,
