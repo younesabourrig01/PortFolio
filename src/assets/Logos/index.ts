@@ -9,7 +9,6 @@ import FilmstackLogo from "./FilmstackLogo.svg"
 import KalciLogo from "./KalciLogo.svg"
 import NuklearbrainLogo from "./NuklearbrainLogo.svg"
 import PikturesLogo from "./PikturesLogo.svg"
-import SrinivasLogo from "./SrinivasLogo.svg"
 import XReconLogo from "./XReconLogo.svg"
 import YoatubeLogo from "./YoatubeLogo.svg"
 import VortexaLogo from "./VortexaLogo.svg"
@@ -31,7 +30,6 @@ export default {
     KalciLogo,
     NuklearbrainLogo,
     PikturesLogo,
-    SrinivasLogo,
     XReconLogo,
     YoatubeLogo,
     VortexaLogo,

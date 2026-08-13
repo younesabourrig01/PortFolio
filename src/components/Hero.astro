@@ -6,14 +6,14 @@ const { config } = Astro.props;
 
 <section
     id="Hero"
-    class="w-full h-[calc(100vh-4rem)] py-4 bg-background flex justify-evenly lg:justify-around items-center flex-col-reverse lg:flex-row overflow-hidden"
+    class="w-full h-[calc(100vh-4rem)] max-[375px]:h-auto max-[375px]:min-h-[calc(100svh-4rem)] py-4 bg-background flex justify-evenly lg:justify-around items-center flex-col-reverse lg:flex-row overflow-hidden max-[375px]:overflow-visible max-[375px]:gap-2"
 >
     <!-- Hero Intro Info -->
-    <div class="w-full lg:w-fit flex justify-start items-center flex-col gap-8">
-        <div class="text-[18px] lg:text-[26px] text-center lg:text-left">
+    <div class="w-full lg:w-fit flex justify-start items-center flex-col gap-8 max-[375px]:gap-3">
+        <div class="text-[18px] max-[375px]:text-[15px] lg:text-[26px] text-center lg:text-left">
             <p class="Fade_Stagger">{config.salutation}</p>
             <h1
-                class="Fade_Stagger gradientText font-ubuntu text-[4em] lg:text-[9rem] leading-tight max-w-xs md:max-w-6xl"
+                class="Fade_Stagger gradientText font-ubuntu text-[4em] max-[375px]:text-[3.25em] lg:text-[9rem] leading-tight max-w-xs max-[375px]:max-w-[9ch] md:max-w-6xl"
             >
                 {config.firstName}
                 {" " + config.lastName}
@@ -29,7 +29,7 @@ const { config } = Astro.props;
         </div>
 
         <div
-            class="Fade_Stagger flex justify-center lg:justify-start items-center w-full gap-10 py-4 text-socialIconColor!"
+            class="Fade_Stagger flex justify-center lg:justify-start items-center w-full gap-10 max-[375px]:gap-8 py-4 max-[375px]:py-2 text-socialIconColor!"
         >
             {
                 config.links &&
@@ -57,12 +57,12 @@ const { config } = Astro.props;
 
     <!-- Hero Orbit Animation -->
     <div
-        class="Hero_Orbit relative flex_center w-[340px] lg:w-[500px] aspect-square"
+        class="Hero_Orbit relative flex_center w-[340px] max-[375px]:w-[260px] lg:w-[500px] aspect-square"
     >
         <div
             id="avatarImage"
             role="button"
-            class="flex_center w-[180px] sm:w-[250px] aspect-square rounded-full z-10 cursor-pointer"
+            class="flex_center w-[180px] max-[375px]:w-[150px] sm:w-[250px] aspect-square rounded-full z-10 cursor-pointer"
             style={{ opacity: 0 }}
         >
             <Image
