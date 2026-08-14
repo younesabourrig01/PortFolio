@@ -1,4 +1,3 @@
-import Avatar from "@assets/images/avatar.png";
 import AboutAvatar from "@assets/images/me.png";
 
 // Importing SVGs as raw strings
@@ -50,7 +49,7 @@ export const heroConfig = {
     highlightedText: "Robust Web Apps",
     suffixText: "with clean full-stack architecture.",
   },
-  avatar: Avatar,
+  avatar: AboutAvatar,
   links: [
     {
       label: "GitHub",
