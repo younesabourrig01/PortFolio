@@ -83,12 +83,6 @@ export const LearningStack = [
         link: "https://www.typescriptlang.org/",
     },
     {
-        name: "Redis",
-        description: "I am learning Redis for caching and fast in-memory data storage.",
-        icon: SKILLS.RedisIcon,
-        link: "https://redis.io/",
-    },
-    {
         name: "Python",
         description: "I have basic notions and want to learn more for backend and automation work.",
         icon: SKILLS.PythonIcon,

@@ -79,6 +79,45 @@ export const PROJECTS_LIST: IProject[] = [
     {
         isHidden: false,
         showDemo: false,
+        name: "JSON2Types",
+        shortDescription: "Developer tool for inspecting JSON responses and converting their structure into TypeScript types.",
+        description:
+            "JSON2Types is an open-source developer tool that lets you create custom URLs for capturing third-party API responses, such as PayPal responses. You can inspect the captured JSON structure and convert it into TypeScript types. The project is built with React, Express.js and TypeScript, MongoDB, and CSS.",
+        logoImage: SCREENSHOTS.JSON2TypesShots,
+        previewImage: SCREENSHOTS.JSON2TypesShots,
+        deviceMockupImage: SCREENSHOTS.JSON2TypesShots,
+        theme: "#2563eb",
+        status: "completed",
+        liveUrl: "",
+        sourceUrl: "https://github.com/younesabourrig01/JSON2Types",
+        technologies: [
+            TECH_STACK.Reactjs,
+            TECH_STACK.TypeScript,
+            TECH_STACK.Expressjs,
+            TECH_STACK.MongoDB,
+        ],
+        features: [
+            {
+                title: "Custom Response Capture URLs",
+                description: "Create custom endpoints to capture and inspect responses from third-party services.",
+            },
+            {
+                title: "JSON Structure Inspection",
+                description: "Explore captured JSON data in a clear, developer-friendly structure.",
+            },
+            {
+                title: "TypeScript Type Generation",
+                description: "Convert JSON structures into TypeScript types for faster, type-safe integration.",
+            },
+            COMMON_FEATURES.Architecture,
+            COMMON_FEATURES.Responsive,
+        ],
+        logoSize: 50,
+        versions: [],
+    },
+    {
+        isHidden: false,
+        showDemo: false,
         name: "PulseTask",
         shortDescription: "DevOps tool created to control multiple servers, manage hosted applications, and execute SSH commands.",
         description:
