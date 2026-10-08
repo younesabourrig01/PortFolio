@@ -1,6 +1,7 @@
 // Frontend & UI Libraries
 import ReactIcon from "./reactjs.svg";
 import TailwindIcon from "./tailwind.svg";
+import AstroIcon from "./astro.svg";
 
 // State Management
 import ReduxIcon from "./redux.svg";
@@ -25,29 +26,30 @@ import GitIcon from "./git.svg";
 import GithubIcon from "./github.svg";
 
 export default {
-    // Frontend & UI Libraries
-    ReactIcon,
-    TailwindIcon,
+  // Frontend & UI Libraries
+  ReactIcon,
+  TailwindIcon,
+  AstroIcon,
 
-    // State Management
-    ReduxIcon,
+  // State Management
+  ReduxIcon,
 
-    // Backend & Frameworks
-    LaravelIcon,
-    ExpressIcon,
+  // Backend & Frameworks
+  LaravelIcon,
+  ExpressIcon,
 
-    // Languages
-    TsIcon,
-    PythonIcon,
-    GoIcon,
+  // Languages
+  TsIcon,
+  PythonIcon,
+  GoIcon,
 
-    // Databases
-    MongoIcon,
-    MysqlIcon,
-    RedisIcon,
+  // Databases
+  MongoIcon,
+  MysqlIcon,
+  RedisIcon,
 
-    // DevOps & Tooling
-    DockerIcon,
-    GitIcon,
-    GithubIcon,
+  // DevOps & Tooling
+  DockerIcon,
+  GitIcon,
+  GithubIcon,
 };
