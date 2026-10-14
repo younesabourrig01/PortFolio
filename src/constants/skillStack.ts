@@ -77,6 +77,12 @@ export const DatabaseStack = [
 
 export const LearningStack = [
     {
+        name: "Astro",
+        description: "I am learning Astro to build fast, content-focused websites with a modern development experience.",
+        icon: SKILLS.AstroIcon,
+        link: "https://astro.build/",
+    },
+    {
         name: "TypeScript",
         description: "I am deepening my TypeScript skills to write safer, more scalable code.",
         icon: SKILLS.TsIcon,
