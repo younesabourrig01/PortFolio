@@ -9,6 +9,12 @@ export interface ISkill {
 
 export const WorkWithStack = [
     {
+        name: "TypeScript",
+        description: "I use TypeScript to write safer, more scalable code.",
+        icon: SKILLS.TsIcon,
+        link: "https://www.typescriptlang.org/",
+    },
+    {
         name: "React.js",
         description: "I can build dynamic frontend interfaces with reusable React components.",
         icon: SKILLS.ReactIcon,
@@ -81,12 +87,6 @@ export const LearningStack = [
         description: "I am learning Astro to build fast, content-focused websites with a modern development experience.",
         icon: SKILLS.AstroIcon,
         link: "https://astro.build/",
-    },
-    {
-        name: "TypeScript",
-        description: "I am deepening my TypeScript skills to write safer, more scalable code.",
-        icon: SKILLS.TsIcon,
-        link: "https://www.typescriptlang.org/",
     },
     {
         name: "Java",
