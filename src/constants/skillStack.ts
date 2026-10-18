@@ -15,6 +15,18 @@ export const WorkWithStack = [
     link: "https://www.typescriptlang.org/",
   },
   {
+    name: "Python",
+    description: "I use Python to build services, APIs, and automation.",
+    icon: SKILLS.PythonIcon,
+    link: "https://www.python.org/",
+  },
+  {
+    name: "Go",
+    description: "I use Go to build fast, reliable backend services.",
+    icon: SKILLS.GoIcon,
+    link: "https://go.dev/",
+  },
+  {
     name: "React.js",
     description:
       "I can build dynamic frontend interfaces with reusable React components.",
