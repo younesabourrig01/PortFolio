@@ -86,6 +86,7 @@ export const aboutConfig = {
     "I am a junior full-stack developer passionate about building reliable web applications with Laravel, React, and modern database-driven architectures.",
     "My experience includes creating full-stack features, connecting frontend interfaces to backend APIs, working with SQL and NoSQL databases, and using tools like Docker and Git to keep development organized.",
     "During my full-stack developer internship, I worked on a React and Laravel application, translated client needs into key features, and improved both performance and the overall user experience.",
+    "I am currently studying mobile development to expand my skills beyond web applications.",
     "I am curious, autonomous, and comfortable learning new backend technologies while collaborating with teams to deliver practical, maintainable solutions.",
   ],
 };
