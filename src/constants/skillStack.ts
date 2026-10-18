@@ -89,16 +89,22 @@ export const LearningStack = [
         link: "https://www.typescriptlang.org/",
     },
     {
-        name: "Python",
-        description: "I have basic notions and want to learn more for backend and automation work.",
-        icon: SKILLS.PythonIcon,
-        link: "https://www.python.org/",
+        name: "Java",
+        description: "I am learning Java as part of my mobile development journey.",
+        icon: SKILLS.JavaIcon,
+        link: "https://www.java.com/",
     },
     {
-        name: "Go",
-        description: "I have basic notions and want to learn more about building efficient backend services.",
-        icon: SKILLS.GoIcon,
-        link: "https://go.dev/",
+        name: "Flutter",
+        description: "I am learning Flutter to build cross-platform mobile applications.",
+        icon: SKILLS.FlutterIcon,
+        link: "https://flutter.dev/",
+    },
+    {
+        name: "Android Studio",
+        description: "I am learning Android Studio for Android app development.",
+        icon: SKILLS.AndroidStudioIcon,
+        link: "https://developer.android.com/studio",
     },
 ] as const;
 

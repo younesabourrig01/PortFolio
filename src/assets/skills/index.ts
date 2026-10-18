@@ -12,8 +12,9 @@ import ExpressIcon from "./express.svg";
 
 // Languages
 import TsIcon from "./typescript.svg";
-import PythonIcon from "./python.svg";
-import GoIcon from "./go.svg";
+import JavaIcon from "./java.svg";
+import FlutterIcon from "./flutter.svg";
+import AndroidStudioIcon from "./Android_Studio.svg";
 
 // Databases
 import MongoIcon from "./mongodb.svg";
@@ -40,8 +41,9 @@ export default {
 
   // Languages
   TsIcon,
-  PythonIcon,
-  GoIcon,
+  JavaIcon,
+  FlutterIcon,
+  AndroidStudioIcon,
 
   // Databases
   MongoIcon,
