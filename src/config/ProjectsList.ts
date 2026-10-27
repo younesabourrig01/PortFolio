@@ -1,6 +1,7 @@
 import LOGOS from "@assets/Logos";
 import SCREENSHOTS from "@assets/Shots";
 import SKILL_STACK from "@/constants/skillStack";
+import SKILLS from "@/assets/skills";
 import { buildTechStack } from "@/utils/commonUtils";
 
 export interface IProject {
@@ -62,6 +63,11 @@ export const TECH_STACK = {
     ...buildTechStack(SKILL_STACK.ToolingTestingStack),
     ...buildTechStack(SKILL_STACK.ConfigTemplatingStack),
     ...buildTechStack(SKILL_STACK.IdesDesignStack),
+    Python: {
+        title: "Python",
+        description: "I use Python to build services, APIs, and automation.",
+        icon: SKILLS.PythonIcon,
+    },
 };
 
 const COMMON_FEATURES = {
@@ -126,7 +132,7 @@ export const PROJECTS_LIST: IProject[] = [
         previewImage: SCREENSHOTS.PulseTaskShots,
         deviceMockupImage: SCREENSHOTS.PulseTaskShots,
         theme: "#2563eb",
-        status: "working now",
+        status: "completed",
         liveUrl: "",
         sourceUrl: "https://github.com/younesabourrig01/PulseTask",
         technologies: [

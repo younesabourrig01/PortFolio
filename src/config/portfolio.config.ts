@@ -20,11 +20,11 @@ export const themeConfig = ThemeOptions.DEFAULT;
 export const siteConfig = {
   title: "Younes Abourrig | Full-Stack Developer",
   description:
-    "Younes Abourrig is a junior full-stack developer focused on building robust web applications with React, Laravel, databases, Docker, and Git.",
+    "Younes Abourrig is a full-stack developer currently studying Mobile and IoT while continuing to build robust web applications with React, Laravel, databases, Docker, and Git.",
   canonical: "",
   googleSiteVerification: "",
   keywords:
-    "Younes Abourrig, Full Stack Developer, Junior Full Stack Developer, React Developer, Laravel Developer, Express.js, MongoDB, SQL, Docker, GitHub, Web Developer Portfolio",
+    "Younes Abourrig, Full Stack Developer, Junior Full Stack Developer, React Developer, Laravel Developer, Express.js, MongoDB, SQL, Docker, GitHub, Web Developer Portfolio, Mobile, IoT",
   avatar: "/favicon.png",
   siteUrl: "https://younesabourrig.dev/",
 };
@@ -83,11 +83,11 @@ export const heroConfig = {
 export const aboutConfig = {
   aboutAvatar: AboutAvatar,
   description: [
-    "I am a junior full-stack developer passionate about building reliable web applications with Laravel, React, and modern database-driven architectures.",
+    "I am a full-stack developer passionate about building reliable web applications with Laravel, React, and modern database-driven architectures.",
     "My experience includes creating full-stack features, connecting frontend interfaces to backend APIs, working with SQL and NoSQL databases, and using tools like Docker and Git to keep development organized.",
     "During my full-stack developer internship, I worked on a React and Laravel application, translated client needs into key features, and improved both performance and the overall user experience.",
-    "I am currently studying mobile development to expand my skills beyond web applications.",
-    "I am curious, autonomous, and comfortable learning new backend technologies while collaborating with teams to deliver practical, maintainable solutions.",
+    "I am currently studying Mobile and IoT, while still actively handling and building full-stack projects.",
+    "I am curious, autonomous, and comfortable learning new technologies while collaborating with teams to deliver practical, maintainable solutions.",
   ],
 };
 

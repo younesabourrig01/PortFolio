@@ -15,10 +15,11 @@ export const WorkWithStack = [
     link: "https://www.typescriptlang.org/",
   },
   {
-    name: "Python",
-    description: "I use Python to build services, APIs, and automation.",
-    icon: SKILLS.PythonIcon,
-    link: "https://www.python.org/",
+    name: "Astro",
+    description:
+      "I use Astro to build fast, modern, and content-driven websites.",
+    icon: SKILLS.AstroIcon,
+    link: "https://astro.build/",
   },
   {
     name: "Go",
@@ -101,19 +102,6 @@ export const DatabaseStack = [
 
 export const LearningStack = [
   {
-    name: "Astro",
-    description:
-      "I am learning Astro to build fast, content-focused websites with a modern development experience.",
-    icon: SKILLS.AstroIcon,
-    link: "https://astro.build/",
-  },
-  {
-    name: "Java",
-    description: "I am learning Java as part of my mobile development journey.",
-    icon: SKILLS.JavaIcon,
-    link: "https://www.java.com/",
-  },
-  {
     name: "Flutter",
     description:
       "I am learning Flutter to build cross-platform mobile applications.",
@@ -125,6 +113,20 @@ export const LearningStack = [
     description: "I am learning Android Studio for Android app development.",
     icon: SKILLS.AndroidStudioIcon,
     link: "https://developer.android.com/studio",
+  },
+  {
+    name: "Spring Boot",
+    description:
+      "I am learning Spring Boot to build robust and scalable enterprise backend services.",
+    icon: SKILLS.SpringBootIcon,
+    link: "https://spring.io/projects/spring-boot",
+  },
+  {
+    name: "C++",
+    description:
+      "I am learning C++ for high-performance programming and IoT development.",
+    icon: SKILLS.CppIcon,
+    link: "https://isocpp.org/",
   },
 ] as const;
 

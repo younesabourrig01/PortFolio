@@ -9,6 +9,7 @@ import ReduxIcon from "./redux.svg";
 // Backend & Frameworks
 import LaravelIcon from "./laravel.svg";
 import ExpressIcon from "./express.svg";
+import SpringBootIcon from "./SpringBoot.svg";
 
 // Languages
 import TsIcon from "./typescript.svg";
@@ -17,6 +18,7 @@ import GoIcon from "./go.svg";
 import JavaIcon from "./java.svg";
 import FlutterIcon from "./flutter.svg";
 import AndroidStudioIcon from "./Android_Studio.svg";
+import CppIcon from "./C++.svg";
 
 // Databases
 import MongoIcon from "./mongodb.svg";
@@ -40,6 +42,7 @@ export default {
   // Backend & Frameworks
   LaravelIcon,
   ExpressIcon,
+  SpringBootIcon,
 
   // Languages
   TsIcon,
@@ -48,6 +51,7 @@ export default {
   JavaIcon,
   FlutterIcon,
   AndroidStudioIcon,
+  CppIcon,
 
   // Databases
   MongoIcon,
